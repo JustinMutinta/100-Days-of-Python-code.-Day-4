@@ -1,16 +1,10 @@
-import random
+fruits = ["Strawberries", "Apples", "Grapes", "Peaches"]    #1st list
+vegetables = ["Spinach", "Lettuce"]                         #2nd list
 
-str_inp = "Hello, from Python"
-names = str_inp.split(",")
+total = [fruits, vegetables]                                #merge them.
 
-print(names)
+print(total)                                                #When printed, will be devided by [1st list],[2nd list]
 
-names_string = input("Give me everybody's names, separated by a comma. \n")
-names_list = names_string.split(", ")
+print(total[0])                                             #prints first list only
 
-number = random.randint(0, len(names_list) - 1)                 #need the -1 because list's start at 0 and the len starts at 1
-print(names_list)
-print(f"The name chosen at random was {names_list[number]}")
-
-random_name = random.choice(names_list)                         #easier way to get random value from name_list
-print(random_name)
+print(total[1][1])                                          #prints second list, item 1
