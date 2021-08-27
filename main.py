@@ -1,10 +1,13 @@
-import random                               #to create random objects
+states_of_america = ["Delaware", "Pennsylvania", "Texas", "Oklahoma", "New York", "Arkansas"]
 
-random_integer = random.randint(1, 10)      #setting random number in a specific range
-print(random_integer)                       #printing it off
+print(states_of_america)
 
-random_float = random.random()              #creating random float between 0.0 and 0.9999999999
-print(random_float)                         #printing the value
+print(states_of_america[3])
 
-love_score = random.randint(1,100)          #Based on previous lesson
-print(f"You're love score is {love_score}") #print out
+states_of_america.append("California")
+
+print(states_of_america)
+
+states_of_america.extend(["Georgia", "Montana", "Wisconsin", "Florida"])
+
+print(states_of_america)
